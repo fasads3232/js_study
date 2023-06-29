@@ -1,18 +1,10 @@
-const a = function(arr){
-    let min = arr[0];
-    let max = arr[0];
-    for (let i=0; i< arr.length; i++)
-{
-    if (arr[i]>max)
-    {
-        max=arr[i] 
-    }
-    else if (arr[i]<min)
-    {
-        min=arr[i]
-    }
+let b = [1,2,3,4,5];
+function calc(a){
+    let sum = 0;
+    a.forEach((item) => {
+        sum+=item
+    });
+    return sum
 }
-let result = max - min;
-return result
-}
-console.log(a([1976,2,3,4,5,6,1111]))
+console.log(calc(b))
+length
